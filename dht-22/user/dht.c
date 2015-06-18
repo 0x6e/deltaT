@@ -23,7 +23,7 @@
 #define DHT_MAXCOUNT 32000
 #define BREAKTIME 32
 
-#define DHT_PIN 16
+#define DHT_PIN 5
 
 enum sensor_type SENSOR;
 
