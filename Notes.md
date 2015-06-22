@@ -1,2 +1,2 @@
-mDNS to find server?
-sntp for time synchronisation?
+* mDNS to find server?
+* sntp for time synchronisation?
