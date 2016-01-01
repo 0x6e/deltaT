@@ -2,6 +2,12 @@
 #include "osapi.h"
 #include "user_interface.h"
 #include "wifi_settings.h"
+#include "httpclient.h"
+
+unsigned char *default_certificate;
+unsigned int default_certificate_len = 0;
+unsigned char *default_private_key;
+unsigned int default_private_key_len = 0;
 
 os_timer_t ip_check_timer;
 
@@ -18,6 +24,7 @@ void check_ip() {
     uint8 buf[20];
     os_bzero(buf, sizeof(buf));
     os_printf(IPSTR, IP2STR(&ipconfig.ip));
+    http_post("http://192.168.1.82/test", "temp=22&hum=45", "", http_callback_example);
   }
   else
   {

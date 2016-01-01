@@ -1,0 +1,3 @@
+[submodule "client/lib/esphttpclient"]
+	path = client/lib/esphttpclient
+	url = https://github.com/Caerbannog/esphttpclient.git
